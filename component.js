@@ -1,7 +1,5 @@
 module.exports = function(){
-    var _ = require('underscore'),
-    schemaValidator = require('jsonschema'),
-    userSchema = require('bonsens-models').user;
+    var _ = require('underscore');
 
     this.init = function(config) {
         var self = this;
@@ -12,7 +10,7 @@ module.exports = function(){
             var pout = {};
             var errors = validate(pin);
             if(errors.length == 0) {
-                //todo add implementtaion here
+                //todo add implementation here
             } else {
                 pout.error = { message: errors[0].message };
                 process.emit('webhook:receive.response', pout);

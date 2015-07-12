@@ -1,0 +1,10 @@
+{
+	"description": "simple webhook component",
+	"author": "Ovi Comes",
+	"version": "0.1.0",
+	"dependencies": {
+		"underscore": "*",
+		"jsonschema": "*",
+		"bonsens-models": "0.2.5"
+	}
+}
